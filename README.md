@@ -146,5 +146,7 @@ can copy-paste them straight into your notebook or script.
 * The helper prints warnings if the selected GPU is hot or already busy.
 * Everything is also available as a **singleton module-level shortcut** –
   feel free to `from gpu_manager import use_gpu`.
+* **Before init Trainer object you must provide suitable arguments for your training for the veirfication `verify_trainer_device(trainer)` to approve.**
+  For example, training only on cpu require `use_cpu=True` on training arguments param.
 
 ---
